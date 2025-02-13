@@ -24,9 +24,11 @@ Galanter believes that generative art is a rule-based art form that uses algorit
 Frider Nake, Vera Molnár, and Harold Cohen are all exploring how to create visual art through rules and algorithms. This article fits well with the theme of "art created through rules." It explores how art is generated through rules and delves into computer art's philosophy, technology, and aesthetics.
 ##note and result
 first work 
-<img width="600" alt="1" src="![image](https://github.com/user-attachments/assets/666ab75e-0431-4e85-a84f-67bf29bee58d)
-<img width="600" alt="1" src="![image](https://github.com/user-attachments/assets/666ab75e-0431-4e85-a84f-67bf29bee58d)
+ src="![image](https://github.com/user-attachments/assets/666ab75e-0431-4e85-a84f-67bf29bee58d)/>
+src="![image](https://github.com/jiayiqu115/final/blob/main/0c5b2909cfb8ec7b50102ba00439b5d.jpg)/>
 
 
 
-<img width="600" alt="" src="https://github.com/jiayiqu115/final/blob/main/1285c803da756554549fd80b526e4ea.png" />
+
+
+
