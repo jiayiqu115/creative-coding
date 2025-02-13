@@ -1,6 +1,6 @@
-# final
-##artist research
-     I chose between JODI and Frider Nake, both artists whose work is interesting and worth further study.
+## research
+
+ I chose between JODI and Frider Nake, both artists whose work is interesting and worth further study.
 Nake believes that computers should not be used to imitate other artistic styles but should inspire people to think about new situations and relationships and even make people forget the concept of "art."
 JODI was founded in 1995 in the early days of the Internet. Their artistic practice is characterized by chaos and non-functional design, revealing the essential characteristics of the Internet. One of their most famous works is **www.jodi.org**, which consists of a maze of HTML code pages full of dead ends but seemingly hiding secrets. For example, the homepage is a garbled code with green text on a black background. Only when you look at the page's source code can you find that these symbols are pieced together to form an image of a nuclear bomb? Due to its chaotic and misleading design, this website is often regarded as the work of hackers. Through this chaos and confusion, JODI reveals the Internet's potential dangers, the information hidden in the code, and how users can be misled.
      In the end, I chose Frider Nake.
@@ -22,3 +22,4 @@ The core of generative art lies in rules. Artists design algorithms and set rule
 These rules can include mathematical formulas, logical operations, random processes, and even artificial intelligence decision-making systems.
 Galanter believes that generative art is a rule-based art form that uses algorithms, mathematical systems, or other structured methods to create works. He defines generative art as "art created by systems that operate autonomously to a certain extent," which is highly consistent with the idea of "creating art through rules."
 Frider Nake, Vera Molnár, and Harold Cohen are all exploring how to create visual art through rules and algorithms. This article fits well with the theme of "art created through rules." It explores how art is generated through rules and delves into computer art's philosophy, technology, and aesthetics.
+##note
