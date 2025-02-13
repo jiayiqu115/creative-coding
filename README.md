@@ -22,10 +22,127 @@ The core of generative art lies in rules. Artists design algorithms and set rule
 These rules can include mathematical formulas, logical operations, random processes, and even artificial intelligence decision-making systems.
 Galanter believes that generative art is a rule-based art form that uses algorithms, mathematical systems, or other structured methods to create works. He defines generative art as "art created by systems that operate autonomously to a certain extent," which is highly consistent with the idea of "creating art through rules."
 Frider Nake, Vera Molnár, and Harold Cohen are all exploring how to create visual art through rules and algorithms. This article fits well with the theme of "art created through rules." It explores how art is generated through rules and delves into computer art's philosophy, technology, and aesthetics.
-##note and result
-first work 
- src="![image](https://github.com/user-attachments/assets/666ab75e-0431-4e85-a84f-67bf29bee58d)/>
-src="![image](https://github.com/jiayiqu115/final/blob/main/0c5b2909cfb8ec7b50102ba00439b5d.jpg)/>
+
+## note and result
+# first work 
+
+<img width="400"  src="https://github.com/jiayiqu115/final/blob/main/0c5b2909cfb8ec7b50102ba00439b5d.jpg" />
+<img width="600"  src="https://github.com/jiayiqu115/final/blob/main/404ed603efbf47aab96df58a4b06c45.png" />
+
+# second work
+<img width="600"  src="https://github.com/jiayiqu115/final/blob/main/8b15e6bbf0d2b8653ac58df672363ba.png" /> 
+# improving 
+i asked chat gpt how to improve it
+chatgpt told me to add:
+1.Color flow: Line and text colors change over time and maintain complementary color relationships
+2.Organic movement: Lines drift slowly like water plants, and interact when the mouse approaches
+3.Ambient glow: There is a soft colored glow around the mouse, and superimposed particles enhance details
+4.Depth level: Create depth of field effect through translucent superposition
+<img width="600"  src="https://github.com/jiayiqu115/final/blob/main/1285c803da756554549fd80b526e4ea.png" /> 
+code that i add 
+
+you can change the numbers to see differnt changings on the canvas
+```
+const CONFIG = {
+  LINE_COUNT: 80,         
+  TEXT_COUNT: 150,        
+  MAX_SPEED: 2,          
+  GLOW_SIZE: 200,         
+  COLOR_SPEED: 0.7        
+};
+```
+
+hsb colour( this is from chat gpt)
+Using hue values in p5.js is a powerful way to create vibrant and dynamic color schemes. In p5.js, the colorMode() function allows you to switch to HSB (Hue, Saturation, Brightness) mode, which is more intuitive for working with colors in creative coding. Here's a detailed guide on how to use hue values effectively:
+1. Setting Up HSB Mode
+By default, p5.js uses RGB (Red, Green, Blue) mode. To switch to HSB mode, use the colorMode()
+
+```
+let hueValue = 0; /
+
+function setup() {
+  createCanvas(800, 800);
+  colorMode(HSB, 360, 100, 100); 
+  strokeWeight(2);
+}
+
+function draw() {
+  background(0, 0, 95); 
+  
+  
+  hueValue = (hueValue + 0.5) % 360;
+  
+  
+  linesArray.forEach(lineObj => {
+    let lineHue = (hueValue + random(-30, 30)) % 360;
+    stroke(lineHue, 80, 70, 50); 
+    line(lineObj.x1, lineObj.y1, lineObj.x2, lineObj.y2);
+  });
+
+ 
+  fill((hueValue + 180) % 360, 50, 100, 80); 
+  // 
+}
+```
+Make lines and text flow:
+
+```
+// 在 generateNew() 中为每个线条添加速度属性
+function generateNew() {
+  linesArray = [];
+  for (let i = 0; i < 50; i++) { 
+    linesArray.push({
+      x1: random(width),
+      y1: random(height),
+      x2: random(width),
+      y2: random(height),
+      vx: random(-1, 1), // X 轴速度
+      vy: random(-1, 1)  // Y 轴速度
+    });
+  }
+}
+
+// 在 draw() 中更新位置
+function draw() {
+  // ...背景和颜色逻辑
+  
+  // 更新线条端点位置
+  linesArray.forEach(lineObj => {
+    lineObj.x1 += lineObj.vx;
+    lineObj.y1 += lineObj.vy;
+    lineObj.x2 += lineObj.vx * 0.5; // 尾端移动更慢
+    lineObj.y2 += lineObj.vy * 0.5;
+    
+    // 边界反弹
+    if (lineObj.x1 < 0 || lineObj.x1 > width) lineObj.vx *= -1;
+    if (lineObj.y1 < 0 || lineObj.y1 > height) lineObj.vy *= -1;
+  });
+}
+```
+
+mouth control
+
+```
+function mouseMoved() {
+  // 鼠标影响线条运动
+  linesArray.forEach(lineObj => {
+    let d = dist(mouseX, mouseY, lineObj.x1, lineObj.y1);
+    if (d < 100) {
+      lineObj.vx += (mouseX - lineObj.x1) * 0.01;
+      lineObj.vy += (mouseY - lineObj.y1) * 0.01;
+    }
+  });
+}
+
+// 双击重置
+function doubleClicked() {
+  generateNew();
+}
+```
+
+
+
+
 
 
 
