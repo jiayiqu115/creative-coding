@@ -1,4 +1,5 @@
 ## research
+# URL：https://jiayiqu115.github.io/creative-coding/
 <img width="400"  src="https://github.com/jiayiqu115/creative-coding/blob/main/Nake1965KleeSmall.webp" />
  I chose between JODI and Frider Nake, both artists whose work is interesting and worth further study.
 Nake believes that computers should not be used to imitate other artistic styles but should inspire people to think about new situations and relationships and even make people forget the concept of "art."
@@ -43,6 +44,21 @@ This creative mode also prompts **the reconstruction of the identity of artists 
 
 overall， the dialectical relationship between **rules and loss of control** in computational art is crucial. Rules provide structure, but excessive certainty may lead to mechanical repetition while introducing randomness or chaotic parameters can break the rigidity and create "unexpected beauty." This balance between order and disorder allows generative art to breed unlimited creativity within the framework of rules.
 Core argument: Rules are the "DNA" of generative art, which determines the form, variation, and evolution potential of the work. For example, Nake's "Hommage à Paul Klee" defines the generation logic of colors and lines through linear algebra formulas. At the same time, the "emergent art" mentioned by Galanter generates complex group behaviors through simple rules (such as the Boids algorithm for bird flock simulation).
+Explicit rules:
+These are the most direct rules, like a written "instruction manual." For example, a fractal pattern is drawn using a mathematical formula, or a painting is generated using the code of a neural network. These rules are written and directly determine the appearance of the work.
+Implicit rules:
+These are rules hidden in the system, not written directly, but generated through interaction. For example, the audience's behavior (such as clicking on the screen or moving the body) will affect the generated results of the artwork. These rules are the "invisible hand" that quietly guides the changes in the work.
+The metaphor of rules for society
+The rule system of generative art can be seen as a metaphor for real society:
+Society has many rules, such as laws, systems, and cultural habits, which control our lives, like code.
+Generative art makes us think: Do these rules make us freer or more controlled? For example, algorithmic recommendations allow us to see more content we like, but will it also limit our vision?
+The challenge of rules to traditional art
+Transparency:
+The rules of generative art (such as code) can be made public, and anyone can see and modify them. This breaks the myth that "artists are the only creators" in traditional art, and art is no longer something "scarce" or "mysterious."
+From "aesthetics" to "logic sense":
+Traditional art makes people appreciate its beauty, while generative art makes people pay more attention to its logic. For example, the audience looks at the painting and wants to know "how this painting is generated with code." Art has changed from "looking at the result" to "understanding the process."
+From "eternity" to "instantaneity":
+Traditional art is usually fixed (such as a painting hanging on the wall), while generative art can constantly change. For example, the pattern on the screen will change in real time over time or with the audience's interaction, and art has become a "living" process rather than a "dead" result.
 
 I am researching on how to transform abstract rules into a form that is perceptible to the audience (such as allowing the audience to adjust the generation rules in real time through parameter sliders).
 
