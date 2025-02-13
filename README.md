@@ -13,11 +13,11 @@ This is a computer-generated geometric abstract art, like the work of Frider Nak
 Possible meaning: Exploring the role of computers in art: This type of work studies how computers generate visual aesthetics, emphasizing procedural creation and automated design.
 Combination of rules and randomness: There are regular straight lines, interlaced lines, and geometric shapes in the picture, but it also contains some distorted areas, which may symbolize changes or interventions under algorithmic control.
 Information visualization or mathematical experiment: The work may be generated based on mathematical functions, geometric divisions, or data mapping.
-Artist's creative motivation:
+
 Study how computers generate images and explore the differences between this and traditional art creation methods.
 Trying to break the boundaries of human-dominated artistic creation and raise the question of "whether art requires human intervention."
 Influenced by 20th-century modernist art (such as constructivism and concrete art) and information aesthetics, it hopes to create new visual experiences through computers.
-       The core of generative art: setting rules
+       
 The core of generative art lies in rules. Artists design algorithms and set rules, and computers or systems generate works according to these rules.
 These rules can include mathematical formulas, logical operations, random processes, and even artificial intelligence decision-making systems.
 Galanter believes that generative art is a rule-based art form that uses algorithms, mathematical systems, or other structured methods to create works. He defines generative art as "art created by systems that operate autonomously to a certain extent," which is highly consistent with the idea of "creating art through rules."
@@ -87,7 +87,7 @@ function draw() {
 Make lines and text flow:
 
 ```
-// 在 generateNew() 中为每个线条添加速度属性
+// 在 generateNew() 
 function generateNew() {
   linesArray = [];
   for (let i = 0; i < 50; i++) { 
@@ -96,21 +96,21 @@ function generateNew() {
       y1: random(height),
       x2: random(width),
       y2: random(height),
-      vx: random(-1, 1), // X 轴速度
-      vy: random(-1, 1)  // Y 轴速度
+      vx: random(-1, 1), // 
+      vy: random(-1, 1)  // 
     });
   }
 }
 
-// 在 draw() 中更新位置
+// 在 draw() 
 function draw() {
-  // ...背景和颜色逻辑
+ 
   
-  // 更新线条端点位置
+ 
   linesArray.forEach(lineObj => {
     lineObj.x1 += lineObj.vx;
     lineObj.y1 += lineObj.vy;
-    lineObj.x2 += lineObj.vx * 0.5; // 尾端移动更慢
+    lineObj.x2 += lineObj.vx * 0.5; 
     lineObj.y2 += lineObj.vy * 0.5;
     
     // 边界反弹
@@ -124,7 +124,7 @@ mouth control
 
 ```
 function mouseMoved() {
-  // 鼠标影响线条运动
+ 
   linesArray.forEach(lineObj => {
     let d = dist(mouseX, mouseY, lineObj.x1, lineObj.y1);
     if (d < 100) {
@@ -134,7 +134,6 @@ function mouseMoved() {
   });
 }
 
-// 双击重置
 function doubleClicked() {
   generateNew();
 }
