@@ -8,7 +8,6 @@ const CONFIG = {
   PARTICLE_COUNT: 30    
 };
 
-// === 全局变量 ===
 let linesArray = [];
 let words = ["无限", "网络", "意识", "孤独", "随机"];
 let hueValue = 0;
